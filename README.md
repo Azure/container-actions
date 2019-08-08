@@ -24,13 +24,13 @@ Now add the username and password as [a secret](https://developer.github.com/act
 ```yaml
 - uses: azure/container-actions/docker-login@master
       with:
-        login-server: demoe.azurecr.io
+        login-server: contoso.azurecr.io
         username: ${{ secrets.REGISTRY_USERNAME }}
         password: ${{ secrets.REGISTRY_PASSWORD }}
     
     - run: |
-        docker build . -t demo.azurecr.io/k8sdemo:${{ github.sha }}
-        docker push demoe.azurecr.io/k8sdemo:${{ github.sha }}
+        docker build . -t contoso.azurecr.io/k8sdemo:${{ github.sha }}
+        docker push contoso.azurecr.io/k8sdemo:${{ github.sha }}
 ```
 
 # Contributing
