@@ -1,6 +1,6 @@
 # Log in to a container registry
 ```yaml
-- uses: azure/actions/k8s-docker-login@master
+- uses: azure/container-actions/docker-login@master
   with:
     username: '<username>'
     password: '<password>'
@@ -10,7 +10,7 @@
 
 ## You can build and push container registry by using the following example
 ```yaml
-- uses: azure/k8s-actions/docker-login@master
+- uses: azure/container-actions/docker-login@master
       with:
         login-server: demoe.azurecr.io
         username: ${{ secrets.REGISTRY_USERNAME }}
