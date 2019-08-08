@@ -2,6 +2,8 @@
 
 This repository contains GitHub Actions to [log in to a private container registry](https://docs.docker.com/engine/reference/commandline/login/) such as [Azure Container registry](https://azure.microsoft.com/en-us/services/container-registry/). Once login is done, the next set of actions in the workflow can perform tasks such as building, tagging and pushing containers.
 
+[GitHub actions for Kubernetes](https://github.com/Azure/k8s-actions) for deploying to a Kubernetes cluster for example Azure Kubernetes service (AKS). Similarly, there are actions for deploying to [Azure Web App for Containers](https://github.com/Azure/appservice-actions).
+
 ## Usage
 Detailed usage information for individual commands can be found in their respective directories.
 
