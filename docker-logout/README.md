@@ -6,7 +6,7 @@ Use this GitHub Action to delete the container registry context from the runner.
   id: logout
 ```
 
-Refer to the action metadata file for details about all the inputs https://github.com/Azure/docker-logout/blob/master/docker-logout/action.yml
+Refer to the action metadata file for details about all the inputs https://github.com/Azure/container-actions/blob/master/docker-logout/action.yml
 
 
 
