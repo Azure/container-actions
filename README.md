@@ -1,8 +1,11 @@
 # GitHub Actions for Containers
+[GitHub Actions](https://help.github.com/en/articles/about-github-actions)  gives you the flexibility to build an automated software development lifecycle workflow. 
 
 This repository contains GitHub Actions to [log in to a private container registry](https://docs.docker.com/engine/reference/commandline/login/) such as [Azure Container registry](https://azure.microsoft.com/en-us/services/container-registry/). Once login is done, the next set of actions in the workflow can perform tasks such as building, tagging and pushing containers.
 
 [GitHub actions for Kubernetes](https://github.com/Azure/k8s-actions) contains actions for deploying to a Kubernetes cluster for example Azure Kubernetes service (AKS). Similarly, there are actions for deploying to [Azure Web App for Containers](https://github.com/Azure/appservice-actions).
+
+[Azure Actions repository](https://github.com/Azure/actions) has a list of all the GitHub Azure Actions.
 
 ## Usage
 Detailed usage information for individual commands can be found in their respective directories.
