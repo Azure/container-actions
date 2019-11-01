@@ -1,42 +1,7 @@
-# GitHub Actions for Containers
-[GitHub Actions](https://help.github.com/en/articles/about-github-actions)  gives you the flexibility to build an automated software development lifecycle workflow. 
-
-This repository contains GitHub Actions to [log in to a private container registry](https://docs.docker.com/engine/reference/commandline/login/) such as [Azure Container registry](https://azure.microsoft.com/en-us/services/container-registry/). Once login is done, the next set of Actions in the workflow can perform tasks such as building, tagging and pushing containers.
-
-[GitHub Actions for Kubernetes](https://github.com/Azure/k8s-actions) contains actions for deploying to a Kubernetes cluster for example [Azure Kubernetes service (AKS)](https://docs.microsoft.com/en-us/azure/aks/intro-kubernetes). Similarly, there are actions for deploying to [Azure Web App for Containers](https://github.com/Azure/appservice-actions).
-
-[GitHub Action for Azure repository](https://github.com/Azure/actions) has a list of all the GitHub Actions for Azure.
-
-## Usage
-Detailed usage information for individual commands can be found in their respective directories.
-
-### Prerequisite
-Get the username and password of your container registry and create secrets for them. For Azure Container registry refer to **admin [account document](https://docs.microsoft.com/en-us/azure/container-registry/container-registry-authentication#admin-account)** for username and password.
-
-Now add the username and password as [a secret](https://help.github.com/en/articles/virtual-environments-for-github-actions#creating-and-using-secrets-encrypted-variables) in the GitHub repository.
-
-#### Example - Log in to a container registry
-```yaml
-- uses: azure/container-actions/docker-login@master
-  with:
-    username: '<username>'
-    password: '<password>'
-    loginServer: '<login server>' # default: index.docker.io
-    email: '<email id>'
-```
-
-##### You can build and push container registry by using the following example
-```yaml
-- uses: azure/container-actions/docker-login@master
-      with:
-        login-server: contoso.azurecr.io
-        username: ${{ secrets.REGISTRY_USERNAME }}
-        password: ${{ secrets.REGISTRY_PASSWORD }}
-    
-    - run: |
-        docker build . -t contoso.azurecr.io/k8sdemo:${{ github.sha }}
-        docker push contoso.azurecr.io/k8sdemo:${{ github.sha }}
-```
+***IMPORTANT NOTICE:***
+ 
+***Actions hosted in this repo are now moved to new GitHub repositories. Please update your existing workflows with the new actions as these old actions will be DEPRECATED and will not be available for use, starting NOV 10, 2019. Refer to https://github.com/Azure/actions for updated action repo details.***  
+***For example, the action `azure/container-actions/docker-login@master` should be replaced with `azure/docker-login@v1` in your workflows.***
 
 # Contributing
 
