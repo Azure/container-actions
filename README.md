@@ -1,6 +1,6 @@
 ***IMPORTANT NOTICE:***
  
-***Actions hosted in this repo are now moved to new GitHub repositories. Please update your existing workflows with the new actions as these old actions will be DEPRECATED and will not be available for use, starting NOV 10, 2019. Refer to https://github.com/Azure/actions for updated action repo details.***  
+***Actions hosted in this repo are now moved to new GitHub repositories. Please update your existing workflows with the new actions as these old actions will be ARCHIVED and will not receive any updates. Refer to https://github.com/Azure/actions for updated action repo details.***  
 ***For example, the action `azure/container-actions/docker-login@master` should be replaced with `azure/docker-login@v1` in your workflows.***
 
 # Contributing
