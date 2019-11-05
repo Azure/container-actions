@@ -1,5 +1,4 @@
 # Docker-Login action is moved to azure/docker-login repository, update your workflows to use the new action.
-name: 'Login Azure'
 name: 'Docker Login'
 description: 'Log in to a container registry'
 inputs: 
